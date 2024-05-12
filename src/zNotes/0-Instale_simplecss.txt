@@ -1,0 +1,9 @@
+LINK
+simplecss.org
+docs/gettings
+
+todo el contenido
+https://github.com/kevquirk/simple.css/wiki/Getting-Started-With-Simple.css
+
+link de estilos colocados en esta app
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
