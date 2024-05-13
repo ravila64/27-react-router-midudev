@@ -2,10 +2,10 @@
 
 # CREAR UN REACT ROUTER DESDE CERO
 
-- [x] Crea el linter 
-- [x] Crear una forma de hacer MPA's (Multiple page appication)
-- [ ] Crea un forma de hacer SAPs (SINGLE PAGE APPLICATION)
-- [ ] poder navegar entre páginas con el botón de atrás
+- [√] Crea el linter 
+- [√] Crear una forma de hacer MPA's (Multiple page appication)
+- [√] Crea un forma de hacer SAPs (SINGLE PAGE APPLICATION)
+- [√] poder navegar entre páginas con el botón de atrás
 - [ ] Crear componente Link para hacerlo declarativo
 - [ ] Crear componente router para hacerlo mas declarativo
 - [ ] Soportar ruta por defecto (404)
