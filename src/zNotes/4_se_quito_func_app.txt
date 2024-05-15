@@ -1,0 +1,19 @@
+ return (
+    <main>
+      <h1>Midu react router</h1>
+      {/* esto es renderizado condicional, clasico de react */}
+      {currentPath === '/' && <HomePage />}
+      {currentPath === '/about' && <AboutPage />}
+    </main>
+  )
+
+  x
+
+   <main>
+      <h1>Midu react router</h1>
+      {/* esto es renderizado condicional, clasico de react */}
+      <Router routes={routes}/>
+      {/* {currentPath === '/' && <HomePage />}
+      {currentPath === '/about' && <AboutPage />} */}
+    </main>
+*

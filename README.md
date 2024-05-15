@@ -6,9 +6,9 @@
 - [√] Crear una forma de hacer MPA's (Multiple page appication)
 - [√] Crea un forma de hacer SAPs (SINGLE PAGE APPLICATION)
 - [√] poder navegar entre páginas con el botón de atrás
-- [ ] Crear componente Link para hacerlo declarativo
-- [ ] Crear componente router para hacerlo mas declarativo
-- [ ] Soportar ruta por defecto (404)
+- [√] Crear componente Link para hacerlo declarativo
+- [√] Crear componente router para hacerlo mas declarativo
+- [√] Soportar ruta por defecto (404)
 - [ ] Soportar rutas con parámetros
 - [ ] Componente <Route /> para hacerlo declarativo
 - [ ] Lazing loading de las rutas

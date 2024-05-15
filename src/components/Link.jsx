@@ -9,11 +9,19 @@ export function navigate(href) {
     // despachar el evento
 }
 
-export function Link({targte, to, ...props }){
+export function Link({target, to, ...props }){
     const handleClick = (event) =>{
-        event.preventDefault()
-        navigate(to)
+        // preventDefault se dejo dentro de la pregunta
+        const isMainEvent=event.button === 0 // left click
+        const isModifiedEvent = event.metaKey || event.altkey || event.ctrlKey || event.shiftKey
+        const isManageableEvent = target === undefined || target === '_self'
+        if (isMainEvent && isManageableEvent && !isModifiedEvent) {
+            event.preventDefault()
+            navigate(to) // navegacion con SPA
+            window.scrollTo(0,0)
+        }
      }
-
-    return <a onClick={handleClick} href={to} target={target}/>
+     console.log(props.children);
+    return <a onClick={handleClick} href={to} target={target} {...props}/>
+ // return <a onClick={handleClick} href={to} target={target} children={props.children}/>
 }

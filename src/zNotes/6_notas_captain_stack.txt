@@ -1,0 +1,9 @@
+// find busqueda binaria en javascrit.
+// Source: https://stackoverflow.com/a/56017713 busqueda binaria en javascrit
+// const getSelectedUser = (userId) => users.find(({id}) => id == userId)
+// find funcion sumar 2 numeros.
+// find funcion potencia de 2 numeros.
+// find binary search in JavaScript.
+// no funciono como se quiere, busca la primera cadena si se digita 
+// hay que investigar el tema
+
