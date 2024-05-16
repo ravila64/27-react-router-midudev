@@ -1,0 +1,17 @@
+const appRoutes = [
+/*
+{
+  path: '/',
+  Component: HomePage
+},
+{
+  path: '/about',
+  Component: AboutPage
+},
+*/
+{
+  path: '/search/:query',   // /search/javascript /search/python, etc
+  Component: SearchPage
+}
+
+se dejo solo search/:query

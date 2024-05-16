@@ -1,0 +1,3 @@
+npm install path-to-regexp -E
+para soportar rutas con parametros
+44:05 video 27_aprender a crear react router con midudev
