@@ -1,0 +1,3 @@
+<Supense> 
+    se utiliza cuando se hacen llamados a funciones como lazy Loading
+</Supense> 
