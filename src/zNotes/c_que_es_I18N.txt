@@ -1,0 +1,11 @@
+Que es un i18n?
+La palabra internacionalización a veces se escribe "i18n", 
+donde 18 es la cantidad de letras entre la i y la ene. 
+La internacionalización generalmente implica: Un modo de diseño y 
+desarrollo que elimine obstáculos a la localización o la distribución internacional.
+
+Significa "internacionalización" y consiste en la primera y 
+la última letra combinadas con un número que indica cuántas letras hay entre ellas.
+
+teoria tema: https://wiki.mageia.org/en/Equipo_de_internacionalizaci%C3%B3n_(i18n)_es_ES
+

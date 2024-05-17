@@ -1,4 +1,4 @@
-import { EVENTS } from "../constants.js"
+import { EVENTS } from "../utils/constants.js"
 
 // eslint-disable-next-line react-refresh/only-export-components
 export function navigate(href) {

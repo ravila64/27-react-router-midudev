@@ -9,7 +9,7 @@ const i18n = {
   en: {
     title: 'About is',
     buttom: 'Go to home page',
-    description: 'Hi! my name is Rene, I am creating a clone of react router'
+    description: 'Hi!, my name is Rene, I am creating a clone of react router'
   }
 }
 
@@ -17,7 +17,9 @@ const useI18n = (lang) =>{
   return i18n[lang] || i18n.en
 }
 
+// eslint-disable-next-line react/prop-types
 export default function AboutPage({ routeParams }) {
+  // eslint-disable-next-line react/prop-types
   const i18n = useI18n(routeParams.lang ?? 'es')
 
   return (

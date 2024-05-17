@@ -1,0 +1,11 @@
+// instalar vitest para hacer testing
+$ npm install vitest -D
+luego se agrega al package.json, la section:
+
+"scripts"{
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "test":"vitest"     // este ultimo los demas ya estaban
+}

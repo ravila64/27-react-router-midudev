@@ -1,4 +1,4 @@
-import { navigate } from "../components/Link"
+import { Link } from "../components/Link"
 import { useEffect } from "react"
 
 export default function SearchPage() {
@@ -12,7 +12,8 @@ export default function SearchPage() {
     return (
         <>
             <h3>Has buscado {routeParams.query}</h3>
-            <button onClick={() => navigate('/')}>Ir al Home</button>
+            <Link to='/'>Ir al Home</Link>
+            {/* <button onClick={() => navigate('/')}>Ir al Home</button> */}
         </>
 
     )

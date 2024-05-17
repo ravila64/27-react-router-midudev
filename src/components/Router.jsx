@@ -1,4 +1,4 @@
-import { EVENTS } from "../constants.js"
+import { EVENTS } from "../utils/constants.js"
 import { useState, useEffect, Children } from "react"
 import { match } from 'path-to-regexp'
 
@@ -32,7 +32,7 @@ export function Router({ children, routes = [], defaultComponent: DefaultCompone
     })   // .filter(Boolean)
 
     console.log(routesFromChildren)
-    const routesToUse = routes.concat(routesFromChildren)
+    const routesToUse = routes.concat(routesFromChildren).filter(Boolean)
 
     // quito routes x routesToUse
     const Page = routesToUse.find(({ path }) => { 

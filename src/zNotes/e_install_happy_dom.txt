@@ -1,0 +1,19 @@
+// se instalo happy-dom
+$npm install happy-dom @testing-library/react -D   (este ultimo parametro -D es para developer)
+despues, configurar el vite.config.js
+debajo de pluggins:
+export default defineConfig({
+  plugins: [react()],
+  test:{
+    environment:'happy-dom'
+  }
+})
+
+read more...
+react testing library
+https://testing-library.com/docs/react-testing-library/intro/
+https://testing-library.com/
+
+in github
+https://github.com/testing-library
+

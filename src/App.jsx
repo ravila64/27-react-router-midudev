@@ -28,8 +28,8 @@ const appRoutes = [
 function App() {
   return (
     <main>
-      {/* se puede colocar el fallback={null} */}
-      <Suspense fallback={<div>Loading...</div>}>
+      {/* se puede colocar el fallback={<div>Loading...</div>} */}
+      <Suspense fallback={null}>
         <h3>react router</h3>
         {/* esto es renderizado condicional, clasico de react */}
         <Router routes={appRoutes} defaultComponent={Page404}>
