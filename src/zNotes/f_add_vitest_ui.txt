@@ -1,0 +1,24 @@
+// se agrego vitest ui en package.json
+
+"test": "vitest",
+"test:ui":"vitest --ui"
+dentro del modulo "scripts"
+
+y para ejecutar.
+
+$npm run test:ui
+
+si no esta instalado se instala, con:
+
+$npm i -D @vitest/ui
+
+para iniciarlo
+$vitest --ui
+
+para ejecutar:
+$npm i -D @vitest/ui
+
+tendremos acceso a un pagina web, de ejemplo
+http://localhost:51204/__vitest__/#/?file=-1533306963&view=graph
+y muestra el report, Module Graph, Code, Console
+

@@ -1,14 +1,15 @@
 import { EVENTS } from "../utils/constants.js"
 import { useState, useEffect, Children } from "react"
 import { match } from 'path-to-regexp'
+import { getCurrentPath } from "../utils/getCurrentPath.js"
 
 // eslint-disable-next-line react/prop-types
 export function Router({ children, routes = [], defaultComponent: DefaultComponent = () => <h1>404</h1> }) {
-    const [currentPath, setCurrentPath] = useState(window.location.pathname)
+    const [currentPath, setCurrentPath] = useState(getCurrentPath())
     useEffect(() => {
         // se ejecuta solo una vez
         const onLocationChange = () => {
-            setCurrentPath(window.location.pathname)
+            setCurrentPath(getCurrentPath())
         }
         // botones ir hacia delante
         window.addEventListener(EVENTS.PUSHSTATE, onLocationChange)
