@@ -1,8 +1,8 @@
 import { Link } from "../components/Link"
 import { useEffect } from "react"
 
-export default function SearchPage() {
-    let routeParams = 'javascript'
+export default function SearchPage({ routeParams }) {
+    //let routeParams = 'javascript'
     useEffect(() => {
         document.title = `Has buscado ${routeParams.query}`  // routeParams.query
         // se podria hacer esto

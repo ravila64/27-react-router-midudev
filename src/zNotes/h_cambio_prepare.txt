@@ -1,0 +1,13 @@
+// "prepare": "npm run test && swc src/components src/utils src/index.jsx -d lib",
+este prepare es el final
+prepare antes de terminar
+"scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "prepare": "swc ./src/*.jsx -d lib",
+    "preview": "vite preview",
+    "test": "echo",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui"
+  },
+  

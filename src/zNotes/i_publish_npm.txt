@@ -1,0 +1,118 @@
+1. instalacion de swc
+    $npm install $swc/cli $swc/core -D
+2. si desea compilar 
+    $npx swc ./src/Router.jsx
+3. Package.json, se adiciona al "script"
+    "prepare": "npm run test && swc src/components src/utils src/index.jsx -d lib",
+4. Se adiciona archivo .npmignore, son:
+    src
+    public
+    index.html
+    pnpm-lock.yaml
+    vite.config.js
+    .swcrc
+5. se adiciona archivo .swcrc
+    {
+    "$schema": "https://json.schemastore.org/swcrc",
+    "jsc": {
+      "parser": {
+        "syntax": "ecmascript",
+        "jsx": true,
+        "dynamicImport": false,
+        "privateMethod": false,
+        "functionBind": false,
+        "exportDefaultFrom": false,
+        "exportNamespaceFrom": false,
+        "decorators": false,
+        "decoratorsBeforeExport": false,
+        "topLevelAwait": false,
+        "importMeta": false
+      },
+      "transform": {
+        "react": {
+          "runtime": "automatic"
+        }
+      },
+      "target": "es2020",
+      "loose": true,
+      "externalHelpers": false,
+      // Requires v1.2.50 or upper and requires target to be es2016 or upper.
+      "keepClassNames": false
+    },
+    "minify": true
+  }
+  6. Se ejecuta: $npm run prepare
+
+  7. Crear una cuenta npn, si no se tiene.
+    $npm login
+    lo lleva a una pagina, dode estan los proyectos, npm.
+
+  8. Despues se publica, con $npm publish
+    $ npm publish
+
+> 27-react-router@0.0.5 prepare
+> npm run test && swc src/components src/utils src/index.jsx -d lib
+
+
+> 27-react-router@0.0.5 test
+> echo
+
+ECHO está activado.
+Successfully compiled: 5 files with swc (93.36ms)
+npm notice 
+npm notice 📦  27-react-router@0.0.5
+npm notice === Tarball Contents === 
+npm notice 566B  .eslintrc.cjs
+npm notice 1.1kB README.md
+npm notice 445B  index.html
+npm notice 102B  lib/index.js
+npm notice 665B  lib/src/components/Link.js
+npm notice 52B   lib/src/components/Route.js
+npm notice 1.3kB lib/src/components/Router.js
+npm notice 64B   lib/src/utils/constants.js
+npm notice 57B   lib/src/utils/getCurrentPath.js
+npm notice 1.2kB package.json
+npm notice === Tarball Details ===
+npm notice name:          27-react-router
+npm notice version:       0.0.5
+npm notice filename:      27-react-router-0.0.5.tgz
+npm notice package size:  12.8 kB
+npm notice unpacked size: 29.3 kB
+npm notice shasum:        942c7ae29fb209a9dcf8ae53b9b13c059590fd9d
+npm notice integrity:     sha512-z4EeIlbbyMMuH[...]zn8M1YIH8ieAQ==
+npm notice total files:   45
+npm notice
+npm notice Publishing to https://registry.npmjs.org/ with tag latest and default access
++ 27-react-router@0.0.5
+
+9. despues de publciado queda en 
+https://www.npmjs.com/package/27-react-router
+
+ir a react.new,  que es un editor en linea de react
+ahi se prueba el proyecto que se ha subido
+
+despues en npm, se busca el proyecto publicado en npm 27-react-router
+
+esto salio cuando la publique, con el cambio de version
+
+ECHO está activado.
+Successfully compiled: 5 files with swc (340.65ms)
+npm notice 
+npm notice 📦  27-react-router@0.0.7
+npm notice === Tarball Contents ===
+npm notice 566B  .eslintrc.cjs
+npm notice 1.1kB README.md
+npm notice 102B  lib/index.js
+npm notice 1.2kB package.json 
+npm notice === Tarball Details ===
+npm notice name:          27-react-router
+npm notice version:       0.0.7
+npm notice filename:      27-react-router-0.0.7.tgz
+npm notice package size:  1.5 kB
+npm notice unpacked size: 2.9 kB
+npm notice shasum:        53b421782d4b148e21a028611c698f0cfaba65e5
+npm notice integrity:     sha512-0CsEfEAKwvNCV[...]/ebk77tJ7ttBg==
+npm notice total files:   4
+npm notice 
+npm notice Publishing to https://registry.npmjs.org/ with tag latest and default access
++ 27-react-router@0.0.7

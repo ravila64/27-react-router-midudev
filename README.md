@@ -13,8 +13,8 @@
 - [√] Componente <Route /> para hacerlo declarativo
 - [√] Lazing loading de las rutas
 - [√] Hacer un i18n con las rutas
-- [ ] Testing
-- [ ] Publicar el paquete en NPM
+- [√] Testing
+- [√] Publicar el paquete en NPM
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 Currently, two official plugins are available:
